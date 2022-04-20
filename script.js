@@ -14,11 +14,26 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+
+var serviceOne = document.getElementById("service-1");
+var serviceTwo = document.getElementById("service-2");
+var serviceThree = document.getElementById("service-3");
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
+serviceOne.onclick = function() {
+  modal.style.display = "block";
+}
+
+serviceTwo.onclick = function() {
+  modal.style.display = "block";
+}
+
+serviceThree.onclick = function() {
+  modal.style.display = "block";
+}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";

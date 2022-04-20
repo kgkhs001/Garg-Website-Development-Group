@@ -1,0 +1,39 @@
+@media screen and (max-width: 750px) {
+    header ul{
+        display: none;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        padding-bottom: 3%;
+    }
+
+    .services .custom, .update, .template{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .example-montage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: black;
+    }   
+    .example{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        color: white;
+    }
+    .example img{
+        width: 100%;
+        height: 100%;
+    }
+}
