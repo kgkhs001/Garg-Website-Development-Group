@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+/* header start */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  background-color: black;
+  transition: 0.6s;
+  
+  /* padding: 100px 40px; */
+}
+header.sticky{
+  background: #fff;
+  color: black;
+  margin-top: 0%;
+}
+header .logo{
+  position: relative;
+  font-weight: 700;
+  margin-left: 0%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  text-decoration: underline;
+  position: relative;
+  list-style: none;
+  font-size: 15px;
+  padding: 2px;
+}
+header ul li:hover{
+  background: none;
+  background-color: gray;
+  text-decoration: underline;
+  transition: 0.6s;
+}
+header ul li{
+  position: relative;
+  list-style: none;
+  font-size: 15px;
+  padding: 2px;
+}
+header ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
+}
+header.sticky .logo,
+header.sticky ul li a{
+  color: black;
+  transition: 0.6s;
+}
+
+header.sticky ul li:hover{
+  background: none;
+  background-color: gray;
+  text-decoration: underline;
+  transition: 0.6s;
+}
+
+/* Style all font awesome icons */
+.fa {
+  width: 50px;
+  text-align: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background-color: red;
+  color: white;
+}
+  /* parallax start */
+  .parallax-effect{
+    background-image: url('projects.jpg');
+    height: 80%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+/* parallax-end */
+
+/* parallax content */
+.text{
+    height: 100%;
+    width: 100%;
+}
+.text .title{
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+    font-size: xx-large;
+}
+/* Parallax Content End */
+/* Projects Start */
+.projects{ 
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: dimgray;
+}
+
+.projects iframe{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 3%;
+  margin-left: 3%;
+  height: auto;
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3%;
+  background-color: dimgray;
+}
+
+.projects .jarvis .physics{
+  margin-top: 1.5%;
+}
+/* Project css template */
+/* jarvis */
+.projects .jarvis{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.projects .jarvis .title{
+  margin-left: 35%;
+  /* border: 1px solid white; */
+  text-align: center;
+  width: 25%;
+  height: auto;
+  color: white;
+}
+
+.projects .jarvis .expand{
+  margin-left: 8%;
+  height: auto;
+  width: 80%;
+  margin-top: auto;
+  /* border: 1px solid white; */
+  color: white;
+  font-size: x-large;
+}
+/* jarvis end */
+
+.projects .jarvis .expand, .title{
+  padding: 1%;
+}
+/* Footer */
+.footer{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.footer a{
+  color: white;
+}
+.footer a:hover{
+  color: gray;
+  transition: 0.6s;
+}
+
+/* Footer End */

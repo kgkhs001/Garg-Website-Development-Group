@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tri Web Development</title>
+    <link href="CSS Files/style-main.css" rel="stylesheet" type="text/css" />
+    <link href="CSS Files/services.css" rel="stylesheet" type="text/css" />
+    <link href="CSS Files/examples.css" rel="stylesheet" type="text/css" />
+    <link href="CSS Files/popup.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <!-- header -->
+    <header>
+        <div class="logo"><a href="#parallax"><h1>Tri Web Development</h1></a></div>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#example">Templates</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li id="myBtn"><a href="#myModal">Make a Request</a></li>
+        </ul>
+    </header>
+    <!-- header end -->
+    <!-- Parallax -->
+    <div id="parallax"></div>
+    <div class="parallax"></div>
+    <!-- parallax end -->
+    <!-- Services (from here on the services.css file is used)-->
+    <div id="services"></div> <!--Ignore this. It is just a marker so that the links on the navbar go to the correct place and I don't have to change the css-->
+    <div class="title"><h2>What We Offer</h2></div>
+    <div class="services">
+        <div class="custom">
+            <div class="service-title"><h4>Customized Website</h4></div>
+            <img src="images/persport.jpg">
+            <div class="info">
+                <p>For a truly personal website you have the option of hiring us to build a completely new website from scratch. You will be able to have us change every and any last detail of the website as you wish.</p>
+                <button>$4,499 + Domain Name and Hosting Fee</button>
+                <div class="message">Prices May Vary Based On Special Requests of Client</div>
+            </div>
+        </div>
+
+        <div class="update">
+            <div class="service-title"><h4>Update Your Current Site</h4></div>
+            <img src="images/parallaxtwo.jpg">
+            <div class="info">
+                <p>Bring a fresh new look to your existing website</p>
+                <button>$799 + Domain Name and Hosting Fee If Necessary</button>
+                <div class="message">Prices May Vary Based On Special Requests of Client</div>
+            </div>
+        </div>
+
+        <div class="template">
+            <div class="service-title"><h4>Buy or Use a Template</h4></div>
+            <img src="images/build.jpg">
+            <div class="info">
+                <p>Templates can either be bought and personally customized by you, the client, or you can hire us to build off of any template offered in our repository.</p>
+                <button>$2,499 + Domain Name and Hosting Fee If Necessary</button>
+                <div class="message">Prices May Vary Based On Special Requests of Client</div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Service Section -->
+
+
+    <!-- Start of Examples Section (Will be using the examples.css file from here on out) -->
+    <div id="example"></div>
+    <div class="title"><h2>Examples of Our Work and Templates</h2>
+    <div class="subtext">All examples in this section can be requested to be used as templates</div>
+    </div>
+    <div class="example-montage">
+        <div class="example">
+            <div class="example-title"><h3>Company</h3></div>
+            <a href="Examples/Garg Group of Companies Website/index.html"><img src="images/Screenshot 2022-04-16 145703.png"></a>
+        </div>
+        <div class="example">
+            <div class="example-title"><h3>Web Development</h3></div>
+            <a href="Examples/Website Start Up/index.html"><img src="images/webdev.png"></a>
+        </div>
+
+        <div class="example">
+            <div class="example-title"><h3>Artistic</h3></div>
+            <a href="Examples/Art Portfolio Website/artport.html"><img src="images/elephant.png"></a>
+        </div>
+    </div>
+
+    <div class="example-montage">
+        <div class="example">
+            <div class="example-title"><h3>Hotel</h3></div>
+            <a href="Examples/Merrill Farm Website/home.html"><img src="images/merrill.png"></a>
+        </div>
+
+        <div class="example">
+            <div class="example-title"><h3>Lodge</h3></div>
+            <a href="Examples/Hotel Website/saco.html"><img src="images/saco.png"></a>
+        </div>
+
+        <div class="example">
+            <div class="example-title"><h3>Personal Portfolio</h3></div>
+            <a href="Examples/PortfolioTemp/Portfolio-Krishna-main/krishnaport.html"><img src="images/portfolioweb.png"></a>
+        </div>
+    </div>
+    <!-- End of Examples and Templates -->
+
+    <!-- Start of Contact Info (the styling for this will be done in style-main.css)-->
+    <div id="contact"></div>
+    <div class="contact">
+        <ul>
+            <li>Email</li>
+            <li>Phone</li>
+            <li>Mailing Address</li>
+            <li>PO Box</li>
+            <li>Other</li>
+        </ul>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Start for Popup (The styling for this will be done in the popup.css file. Because this will need javascript it is good to know that the javascript for this will be done in script.js)-->
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <form action="mailto:kgarg1675@gmail.com" method="post" enctype="text/plain" action="/action_page.php">
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="text-decoration: underline;">Please Fill in the Following Information</h2>
+            
+            <h4>Name (First, Last):</h4>
+            <input type="text" name="Name" required>
+
+            <h4>What Service Would you Like:</h4>
+            <select name="Service" id="service-select" required>
+                <option value="None">None</option>
+                <option value="Customized Website">Customized Website</option>
+                <option value="Build off of Template">Build off of Template</option>
+                <option value="Buy Template">Buy Template</option>
+                <option value="Update Current Website">Update Current Website</option>
+            </select>
+
+            <h4>Best Email to Contact You:</h4>
+            <input type="email" name="Email" id="email" required>
+            
+            <h4>Company Name:</h4>
+            <input type="text" Name="Company" required>
+
+            <h4>For What Purpose is this Website:</h4>
+            <input type="text" name="Purpose" id="purpose" required>
+            <h4> </h4>
+            <input type="submit" value="Send" id="submit">
+        </div>
+
+        </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

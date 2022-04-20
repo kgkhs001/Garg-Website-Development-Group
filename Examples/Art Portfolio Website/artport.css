@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body, html{
+    width: 100%;
+    height: 100%;
+  }
+  /* header start */
+  header{
+    position: fixed;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.6s;
+    
+    /* padding: 100px 40px; */
+  }
+  header.sticky{
+    background-color: rgba(255,255,255, 0.2);
+    margin-top: 0%;
+  }
+  header .logo{
+    position: relative;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  header ul li:hover{
+    background-color: gray;
+    color: black;
+    text-decoration: underline;
+    transition: 0.6s;
+  }
+  header ul li{
+    position: relative;
+    list-style: none;
+    font-size: 15px;
+    padding: 2px;
+  }
+  header ul li a{
+    color: black;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+  }
+
+  header.sticky ul li:hover{
+    background-color: white;
+    text-decoration: underline;
+    transition: 0.6s;
+  }
+  header.sticky ul{
+    background-color: rgb(0,0,0,0);
+    transition: 0.6s;
+  }
+
+  header.sticky .logo,
+  header.sticky ul li a{
+    color: #000;
+  }
+  /* header end */
+
+  #header-image{
+      /* The image used */
+  padding-top: 1%;
+  background-image: url("images/art-background.jpg");
+  height: 85%;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+  }
+
+  .hook  .hook-2 h1{
+      /* background-color: beige; */
+      text-align: center;
+      height: 10%;
+      width: 25%;
+      padding-top: 15%;
+      margin-left: 65%;
+      font-size: xx-large;
+      font-weight: bolder;
+      font-size: 300%;
+      color:black;
+  }
+
+  yay{
+    /* background-color: rgba(0, 0, 0, 0.2); */
+      color:black;
+      /* border: 2px solid white; */
+  }
+  /* header content, image, and setting DONE */
+
+  /* Starting Actual Content */
+#info-one{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.4);
+}
+.imagemontage-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    padding-bottom: 1%;
+}
+
+.imagemontage-one-titles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;  
+  padding-bottom: 1%;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
+}
+
+.imagemontage-one img{
+  height: 25%;
+  width: 33%;
+}
+
+.imagemontage-two{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;    
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+}
+
+.imagemontage-two p{
+  height: 25%;
+  width: 33%;
+  color: rgba(0, 0, 0, 0.4);
+}
+.title-gallery{
+  border-top: 5px solid black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* rotating gallery */
+.info-one-sectiontwo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  /* border-top: 5px solid black; */
+  border-bottom: 5px solid black;
+}
+
+.slider{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate{
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.slider span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin:  center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 5px 10px 0 black;
+  transition: 2s;
+}
+
+.slider span:hover img{
+  transform: translateY(-50px);
+}
+/* End of Rotating Gallery */
+
+/* Illustration Section */
+/* Info Section Two */
+.info-two{
+  background-color: white;
+  color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: auto;
+}
+
+.title{
+  text-align: center;
+  text-decoration: underline;
+}
+.work{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 5px solid black;
+}
+.work img{
+  width: 50%;
+  height: 25%;
+  padding: 1%;
+  margin-left: 25%;
+}
+
+.work img:hover{
+  width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    justify-content: space-between;
+    padding: 1%;
+    transition: 0.6s;
+}
+
+/* Footer */
+.footer{
+  width: 100%;
+  height: 30%;
+}
+.icons{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons a{
+  padding: 20px;
+  font-size: 60px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.3;
+  transition: 00.6s;
+}
