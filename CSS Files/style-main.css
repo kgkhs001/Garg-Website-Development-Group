@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.4);
     border-bottom: 6px solid darkolivegreen;
     transition: 0.8s;
 }
