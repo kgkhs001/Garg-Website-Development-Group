@@ -20,7 +20,7 @@
     height: 250px;
 }
 .example img:hover{
-    border: 2px solid darkolivegreen;
-    opacity: 0.4;
+    outline: 4px solid darkolivegreen;
+    opacity: 0.8;
     transition: 0.6s;
 }
