@@ -1,0 +1,32 @@
+ /* Basic format */
+  
+  .reviews .review-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  yay{
+    font-size: 300%;
+    color: olive;
+  }
+  .reviews .review-cards .review-1 {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 5px darkolivegreen;
+    text-align: justify;
+    padding-bottom: 1%;
+    font-size: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .reviews .review-cards .review-1 .review{
+        margin-right: 5%;
+        margin-left: 5%;
+  }

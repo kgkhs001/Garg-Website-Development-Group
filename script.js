@@ -14,7 +14,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-
+var submit = document.getElementById("submit");
 var serviceOne = document.getElementById("service-1");
 var serviceTwo = document.getElementById("service-2");
 var serviceThree = document.getElementById("service-3");
@@ -45,3 +45,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// submit.onclick = function() {
+//   modal.style.display = "none";
+// }
+
