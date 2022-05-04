@@ -10,6 +10,14 @@ body, html{
 }
 
 /* Header Start */
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 header{
     display: flex;
     position: fixed;
@@ -21,6 +29,7 @@ header{
     background-color: rgb(0, 0, 0, 0.4);
     border-bottom: 6px solid darkolivegreen;
     transition: 0.8s;
+    animation: fade-in 5s;
 }
 header.sticky{
     height: 1%;
@@ -46,6 +55,7 @@ header ul li{
     padding-top: 1%;
     padding-bottom: 1%;
     transition: 0.8s;
+    
 }
 header ul li a{
     color: white;
@@ -71,7 +81,6 @@ header ul li:hover{
     background-size: cover;
 }
 
-
 /* contact info */
 
 .contact{
@@ -89,4 +98,52 @@ header ul li:hover{
 .contact ul li{
     list-style: none;
     padding: 1%;
+}
+
+
+
+
+
+/* footer */
+
+.footer{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-top: 6px solid darkolivegreen;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    transition: 0.8s;
+}
+.footer ul li{
+    list-style: none;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: 0.8s;
+    margin-right: 5%;
+    outline: 4px solid darkolivegreen;
+    
+}
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+/* On Header Content Hover */
+.footer ul li:hover{
+    background-color: darkolivegreen;
+    outline: 2px solid white;
+    transition: 0.4s;
 }
