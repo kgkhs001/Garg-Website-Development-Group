@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px){
+    .hook  .hook-2 h1{
+        /* background-color: beige; */
+        text-align: center;
+        height: 10%;
+        width: 25%;
+        padding-top: 15%;
+        margin-left: 65%;
+        font-size: large;
+        font-weight: bolder;
+        font-size: 150%;
+        color:black;
+    }
+}
