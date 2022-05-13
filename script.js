@@ -21,6 +21,7 @@ var submit = document.getElementById("submit");
 var serviceOne = document.getElementById("service-1");
 var serviceTwo = document.getElementById("service-2");
 var serviceThree = document.getElementById("service-3");
+var serviceFour = document.getElementById("service-4");
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
@@ -35,6 +36,10 @@ serviceTwo.onclick = function() {
 }
 
 serviceThree.onclick = function() {
+  modal.style.display = "block";
+}
+
+serviceFour.onclick = function() {
   modal.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
